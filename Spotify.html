@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css ">
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" src="Images/image.png" alt="left-banner-img">
+            <div class="heading">
+            <h1>Deep Focus</h1>
+            <p>keep focus & Enjoy your music Like a happy soul</p>
+           </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="controls" onclick="playaudio()" id="play-pause"><img class="play-button" src="Images/play-button.svg" alt="play-image"></div>
+        <audio id="song"></audio>
+        <table>
+            <thead>
+                <th class="song-number">#</th>
+                <th class="song-title">Title</th>
+                <th class="song-artist">Artist</th>
+                <th class="song-duration">Duration</th>
+            </thead>
+            <tbody>
+                <tr id="song1" onclick="playAll(1)">
+                    <td>1</td>
+                    <td>Ninnila</td>
+                    <td>Armaan</td>
+                    <td>03:54</td>
+                </tr>
+                <tr id="song2" onclick="playAll(2)">
+                    <td>2</td>
+                    <td>Yemito</td>
+                    <td>Haricharan</td>
+                    <td>04:28</td>
+                </tr>
+                <tr id="song3" onclick="playAll(3)">
+                    <td>3</td>
+                    <td>Tholi parichayama idhi</td>
+                    <td>Haricharan</td>
+                    <td>04:00</td>
+                </tr>
+                <tr id="song4" onclick="playAll(4)">
+                    <td>4</td>
+                    <td>Bonding</td>
+                    <td>Haricharan</td>
+                    <td>04:28</td>
+                </tr>
+                <tr id="song5" onclick="playAll(5)">
+                    <td>5</td>
+                    <td>Niluvadhamu Ninu Epudaina</td>
+                    <td>Karthik</td>
+                    <td>5:59</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer class="foot"><i class="fa-solid fa-copyright"></i> 2023 By Mr.Sandeep Kumar Mekala</footer>
+    <script src="file.js"></script>
+</body>
+</html>
